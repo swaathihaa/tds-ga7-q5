@@ -1,9 +1,9 @@
 from datetime import datetime
 from typing import Any
 
-from fastapi import FastAPI
-
 from fastapi import FastAPI, Body
+
+app = FastAPI()
 
 VALID_TYPES = {
     "dns",
