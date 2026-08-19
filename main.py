@@ -3,7 +3,7 @@ from typing import Any
 
 from fastapi import FastAPI
 
-app = FastAPI()
+from fastapi import FastAPI, Body
 
 VALID_TYPES = {
     "dns",
@@ -35,7 +35,7 @@ def invalid_response():
 
 
 @app.post("/corroborate")
-def corroborate(body: Any):
+def corroborate(body: Any = Body(...)):
 
     # --------------------------------------------------
     # RULE 1: INVALID
