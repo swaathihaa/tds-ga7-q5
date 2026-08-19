@@ -1,0 +1,27 @@
+{
+  "claim": {
+    "subject": "1mqewf.example",
+    "predicate": "resolves_to",
+    "value": "203.0.113.20"
+  },
+  "asOf": "2026-08-01T00:00:00Z",
+  "stalenessDays": 120,
+  "sources": [
+    {
+      "id": "s1",
+      "type": "dns",
+      "origin": "resolver-a",
+      "observedAt": "2026-07-30T00:00:00Z",
+      "value": "203.0.113.20",
+      "authoritative": false
+    },
+    {
+      "id": "s2",
+      "type": "registry",
+      "origin": "registry-x",
+      "observedAt": "2026-07-29T00:00:00Z",
+      "value": "203.0.113.20",
+      "authoritative": false
+    }
+  ]
+}
